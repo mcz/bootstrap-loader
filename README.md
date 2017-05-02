@@ -401,6 +401,7 @@ Additionally, Bootstrap 4 requires Tether. You can add Tether per the examples i
   plugins: [
     new ExtractTextPlugin('app.css', { allChunks: true }),
     new webpack.ProvidePlugin({
+      "Tether": "tether",
       "window.Tether": "tether"
     }),
   ],
